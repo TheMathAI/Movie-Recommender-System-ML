@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ML Movie Recommender</title>
+    </head>
+    
+    <body>
+        <h1>Machine Learning Movie Recommendation System</h1>
+        <h4>Key Features</h4>
+        <h4> <ul >
+                <li>Collaborative Filtering System</li>
+                
+                <li>Matrix Factorization Algorithm (Singular Value Decomposition SVD)</li>
+                
+                <li>Train with K-Fold Cross Validation</li>
+
+                <li>Frobenius Norm Was Used to Measure Accuracy of the Model</li>
+            </ul>
+        </h4>
+        <form name="form", method="POST", style="text-align: center;">
+
+            <b>Please rate the following movies by giving a rating from 1 to 5 (1 means you hate the movie and 5 means you love it).</b>
+            <br><br>
+            Here are the 18 most rated movies in the <i>Movielens 1M Dataset</i> which contains 1 million ratings from 6000 user on 4000 movies release before 2003.
+            <br><br>
+            Toy Story: <input type="number" name="1", placeholder="From 1 to 5" required/>
+            <br><br>
+            Muppet Treasure Island: <input type="number" name="107", placeholder="From 1 to 5" required/>
+            <br><br>
+            Jefferson in Paris: <input type="number" name="254", placeholder="From 1 to 5" required/>
+            <br><br>
+            Natural Born Killers: <input type="number" name="288", placeholder="From 1 to 5" required/>
+            <br><br>
+            Rent-a-Kid: <input type="number" name="310", placeholder="From 1 to 5" required/>
+            <br><br>
+            Bitter Moon: <input type="number" name="347", placeholder="From 1 to 5" required/>
+            <br><br>
+            Live Nude Girls: <input type="number" name="467", placeholder="From 1 to 5" required/>
+            <br><br>
+            Ref, The: <input type="number" name="514", placeholder="From 1 to 5" required/>
+            <br><br>
+            Fausto: <input type="number" name="576", placeholder="From 1 to 5" required/>
+            <br><br>
+            Princess Caraboo: <input type="number" name="580", placeholder="From 1 to 5" required/>
+            <br><br>
+            Snow White and the Seven Dwarfs: <input type="number" name="594", placeholder="From 1 to 5" required/>
+            <br><br>
+            Walking and Talking: <input type="number" name="803", placeholder="From 1 to 5" required/>
+            <br><br>
+            So Dear to My Heart: <input type="number" name="1026", placeholder="From 1 to 5" required/>
+            <br><br>
+            Loser: <input type="number" name="1107", placeholder="From 1 to 5" required/>
+            <br><br>
+            Haunted Honeymoon: <input type="number" name="2786", placeholder="From 1 to 5" required/>
+            <br><br>
+            Forces of Nature: <input type="number" name="2558", placeholder="From 1 to 5" required/>
+            <br><br>
+            Glory Daze: <input type="number" name="1121", placeholder="From 1 to 5" required/>
+            <br><br>
+            JLG/JLG - autoportrait de decembre: <input type="number" name="1149", placeholder="From 1 to 5" required/>
+            <br><br>
+
+
+            <button value="Submit">Run</button>
+        </form>
+            <center>
+            {% for table in output %}
+            
+            {{ table|safe }}
+            {% endfor %} 
+            </center>
+    </body>
+</html>
