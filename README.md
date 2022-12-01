@@ -18,3 +18,6 @@ To run the webapp make sure to download the following documents:
 - clean_data (folder)
 
 Now you only need to use the Flask library.
+
+# Author
+Félix Jean
