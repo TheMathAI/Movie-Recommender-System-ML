@@ -9,7 +9,7 @@ To train the model, k-fold cross-validation was used by masking different parts 
 
 To evaluate the accuracy of the model, the Frobenius norm was used. The best latent feature turns out to be 48.
 
-Please look at the Finale_Version file to see the code related to the data training.
+Please look at the Training_Model file to see the code related to the data training.
 
 # Webapp
 To run the webapp make sure to download the following documents:
